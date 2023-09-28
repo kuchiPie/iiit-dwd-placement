@@ -7,7 +7,93 @@
     <title>Untitled</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/circle-progress-bar.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<style>
+    /* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  height: 160px;
+  border-radius: 25px;
+  background-color: #f5f5f5;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px 14px;
+}
+.name{
+  line-height: 120%;
+  font-size: 16px;
+  font-weight: 550;
+  color: #333;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+.description{
+  line-height: normal;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+  color: #090909;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.swiper-navBtn{
+  color: #013365;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #50A5CA;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #50A5CA;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #013365;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+</style>
 </head>
+
 
 <body>
     <div class="container" style="text-align: center;margin-top: 20px;"><img width="258" height="109" src="assets/img/logo2881-e34-200h.png" style="width: 50%;position: relative;height: auto;max-width: 250px;"></div>
@@ -45,6 +131,64 @@
     <div class="container" style="margin-top: 65px;max-width: 780px;">
         <h1 style="font-size: 30px;font-weight: bold;">Offered Placement CTC</h1>
         <p>Paragraph</p>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name" style="color:#013365;">Outcome-Based Education Emphasis</h2>
+                            <p class="description">Demonstrates that students are trained to meet specific objectives, indicating their skills are parallel to industry needs.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name" style="color:#013365;">Holistic Curriculum</h2>
+                            <p class="description">The balanced mix of theory, core subjects, breadth areas, soft skills, and projects ensures students are well-rounded and adaptable</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name" style="color:#013365;">Specialization Opportunities</h2>
+                            <p class="description">Elective subjects encourage students to pursue specialized knowledge, making them ideal candidates for roles requiring niche expertise.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name" style="color:#013365;">Interdisciplinary Learning</h2>
+                            <p class="description">Exposure to a variety of subjects promotes a diverse skill set, enabling graduates to approach challenges from multiple angles.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name" style="color:#013365;">Project-Centric Learning</h2>
+                            <p class="description">The focus on projects allows students to apply theoretical knowledge practically, preparing them for real-world scenarios.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name" style="color:#013365;">Institute Autonomy</h2>
+                            <p class="description">An academic Senate with industry professionals ensures that the curriculum remains relevant and responsive to industry trends.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name" style="color:#013365;">IT-Focused Curriculum</h2>
+                            <p class="description">Specializing in IT-related fields from the start shows candidates' alignment with technology-driven industries, meeting modern job demands.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h2 class="name" style="color:#013365;">Practical Learning Opportunities</h2>
+                            <p class="description">Involvement in projects and hackathons showcases candidates' practical skills and problem-solving abilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
     <div class="container" style="margin-top: 65px;max-width: 780px;">
         <div class="row">
@@ -153,6 +297,38 @@
         <p></p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        centerSlide: 'true',
+        fade: 'true',
+        grabCursor: 'true',
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    
+        breakpoints:{
+            0: {
+                slidesPerView: 1,
+            },
+            520: {
+                slidesPerView: 2,
+            },
+            950: {
+                slidesPerView: 3,
+            },
+        },
+      });
+</script>
 </body>
 
 </html>
