@@ -1,0 +1,33 @@
+{
+    "current_median_ctc":"8",
+    "current_highest_ctc":"35",
+    "current_average_ctc":"11",
+    "bar_chart_data":[
+        {
+            "year":"2019",
+            "avg_ctc":"6",
+            "highest_ctc":"10"
+        },
+        {
+            "year":"2020",
+            "avg_ctc":"7",
+            "highest_ctc":"11"
+        },
+        {
+            "year":"2021",
+            "avg_ctc":"7.3",
+            "highest_ctc":"25"
+        },
+        {
+            "year":"2022",
+            "avg_ctc":"8",
+            "highest_ctc":"25"
+        },
+        {
+            "year":"2023",
+            "avg_ctc":"11.52",
+            "highest_ctc":"35"
+        }
+    ],
+    "avg_package_top_20%":"19.5"
+}
