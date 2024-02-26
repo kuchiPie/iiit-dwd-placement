@@ -111,6 +111,16 @@
   animation: loading-5 1.2s linear forwards 1.8s;
 }
 
+.zoom{
+  transition: transform .2s;
+}
+
+.zoom:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
 @keyframes loading-1 {
 }
 
